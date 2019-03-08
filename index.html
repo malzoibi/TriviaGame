@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Trivia Game</title>
+</head>
+<body>
+        <div id="splashscreen">
+                <div class="splashBox">
+                        <h1>Capitals and Countries Trivia</h1>
+                        <p>You have 60 seconds to complete 6 questions.</p>
+                        <button type="button" id="start-btn" class="btn btn-primary black-background white">Start</button>
+                </div>
+        </div>
+
+<div class="timer">Time Remaining:</div>
+
+<form name="quiz" onsubmit="return onSubmit()"> 
+<div class="questions">
+<!--Question One-->
+        <p class="question">The capital of Syria is Damascus.</p>
+        <input type="radio" name="question1" value="T" id="q1"><label for="q1">True</label>
+        <input type="radio" name="question1" value="F" id="q1"><label for="q1">False</label>
+<!--Question Two-->
+        <p class="question">The capital of Beirut is Lebanon.</p>
+        <input type="radio" name="question2" value="T" id="q2"><label for="q2">True</label>
+        <input type="radio" name="question2" value="F" id="q2"><label for="q2">False</label>
+<!--Question Three-->
+        <p class="question">The capital of Kuwait is Doha.</p>
+        <input type="radio" name="question3" value="T" id="q3"><label for="q3">True</label>
+        <input type="radio" name="question3" value="F" id="q3"><label for="q3">False</label>
+<!--Question Four-->
+        <p class="question">The capital of Iraq is Baghdad.</p>
+        <input type="radio" name="question4" value="T" id="q4"><label for="q4">True</label>
+        <input type="radio" name="question4" value="F" id="q4"><label for="q4">False</label>
+<!--Question Five-->
+        <p class="question">The capital of Palestine is Jerusalem.</p>
+        <input type="radio" name="question5" value="T" id="q5"><label for="q5">True</label>
+        <input type="radio" name="question5" value="F" id="q5"><label for="q5">False</label>
+<!--Question Six-->
+        <p class="question">The capital of Egypt is Alexandria.</p>
+        <input type="radio" name="question6" value="T" id="q6"><label for="q6">True</label>
+        <input type="radio" name="question6" value="F" id="q6"><label for="q6">False</label>
+</div>
+
+<button type="submit">Submit</button>
+           
+<div id="results">
+        <h2>Score:</h2>
+</div>
+
+
+
+    <script type ="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
